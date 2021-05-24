@@ -1,0 +1,70 @@
+﻿<Window x:Class="Zoo.Forms.SelectGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="SelectGame" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="btSlot0" Content="Слот 1" FontSize="45"
+                Margin="5"
+                Grid.Row="1" Grid.Column="2"
+                Click="btSlot0_Click"/>
+
+        <Button x:Name="btSlot1" Content="Слот 2" FontSize="45"
+                Margin="5"
+                Grid.Row="2" Grid.Column="2"
+                Click="btSlot1_Click"/>
+
+        <Button x:Name="btSlot2" Content="Слот 3" FontSize="45"
+                Margin="5"
+                Grid.Row="3" Grid.Column="2"
+                Click="btSlot2_Click"/>
+
+        <Button x:Name="btDel0" Content="🗑"
+                Margin="10"
+                Grid.Column="3" Grid.Row="1"
+                Click="btDel0_Click"/>
+        
+        <Button x:Name="btDel1" Content="🗑"
+                Margin="10"
+                Grid.Column="3" Grid.Row="2"
+                Click="btDel1_Click"/>
+        
+        <Button x:Name="btDel2" Content="🗑"
+                Margin="10"
+                Grid.Column="3" Grid.Row="3"
+                Click="btDel2_Click"/>
+
+        <Button x:Name="btInfo0" Content="ℹ"
+                Margin="10"
+                Grid.Column="1" Grid.Row="1"
+                Click="btInfo0_Click"/>
+        
+        <Button x:Name="btInfo1" Content="ℹ"
+                Margin="10"
+                Grid.Column="1" Grid.Row="2"
+                Click="btInfo1_Click"/>
+        
+        <Button x:Name="btInfo2" Content="ℹ"
+                Margin="10"
+                Grid.Column="1" Grid.Row="3"
+                Click="btInfo2_Click"/>
+    </Grid>
+</Window>
